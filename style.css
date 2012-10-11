@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0 auto; padding:0;}
+body{ width:100%; height:auto; background-image: url(img/tile.jpg);}
+#container{width:100%; height:auto; background: url(img/bg.png) no-repeat center 0 !important; position: absolute!important;}
+#topo{ width: 960px; height:auto; background: #990; display: block;}
+#logo{width: 30%; height:100px; background:#9F0; float: left; }
+#nav-topo{ width:70%; height: 100px; background:#993; float:left;}
+#busca{ width: 100%; height:35%; background:#C60;}
+#menu{ width: 100%; height:65%; background:#F30;}
+#slider{ width: 960px; height:400px; background:#9C0; float:left;}
+#conteudo-slider{width: 100%; height:350px; background:#0CF}
+#nav-slider{width: 100%; height:50px; background:#09F;}
+#corpo{ width:960px; height:600px; background:#FF0000; clear:left; display: block;}
+
+#corpo-2col{ width:960px; height: 600px; background:#FFF; display: block;}
+#conteudo-principal{width:700px; height: 600px; background: #9C0; float:left}
+#barra-lateral{width:260px; height: 600px; background:#FFF; float:left;}
+#rodape{ width:960px; height: 170px; background:#000; clear:left; display: block;}
+
+.clear-left{ clear:left}
