@@ -1,0 +1,507 @@
+/*
+Theme Name: 2Br
+Theme URI: http://www.twobrasil.com
+Description: Template da TWOBrasil 2012.
+Author: Sandro Ribas
+Author URI: http://www.twobrasil.com
+Version: 1.0
+*/
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+body{width:100%; height:auto; background-image:url(img/bg3.png); background-position:0 top; background-repeat:no-repeat; background-color:#eeeeee;}
+
+.floatLeft, .floatRight{ display:block; margin:15px auto;}
+.imargem{ padding-left: 0px;}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+@media only screen and (max-width: 480px) {
+	.gridContainer {
+		margin-left: auto;
+		margin-right: auto;
+		width: 87.36%;
+		padding-left: 1.82%;
+		padding-right: 1.82%;
+	}
+	#topo {
+		clear: both;
+		float: left;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#logo {
+		/*background-image: url(img/logo-topo.png);
+		background-repeat:no-repeat;
+		background-position: top 50px;*/
+		height:101px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#nav-topo {
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#busca {                                                                         
+	display: none;
+																						  
+	}
+	#menu {                                                                            
+	clear: both;                                                                         
+	float: left;                                                                           
+	margin-left: 0;
+	height:50px;                                                                         
+	width: 100%;                                                                               
+	display: block;                                                                      
+	}
+	#slider {
+		clear: both;
+		float: left;
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#conteudo-slider {
+		float: left;
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		position:relative
+	}
+	#legenda {                                                                          
+	clear: both;                                                                          
+	float: left;  
+	min-height:35px;                                                                     
+	margin-left: 0;                                                                          
+	width: 100%;                                                                       
+	display: block;                                                                          
+	}
+	
+	#leg{background:#F30; width: 100%; height:auto; margin:0 auto; padding-bottom:20px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 20px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {   
+	clear: both;                                                                       
+	float: left;
+	min-height: 283px;
+	width: 100%;
+	display: block;
+	}
+	#imagem img{ padding:0; margin:0 auto;}
+	#nav-slider {
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		min-height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:200px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.home-cols{ width:100%; min-height:400px; height:auto; display:block; float:left; text-align:center; border-bottom:#999 dashed 1px;}
+	.home-cols:last-child{ border-bottom:none;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
+	#conteudo-principal {                                                                                  
+	/*float: left;                                                                                  
+	margin-left: 0;                                                                             
+	width: 100%;                                                                                 
+	display: block; */                                                                                 
+	}
+	#barra-lateral {                                                                                                                                                     
+	/*float: left;	                                                                                  
+	margin-left: 0;                                                              
+	width: 100%;
+	display: block;*/                                                                              
+	}
+	#rodape {
+		background: #1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		margin-left: 0;
+		min-height:75px;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top: 10px;
+	}
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;
+	}
+	#logo {
+		/*background:#9F0;*/
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 30%;
+		 
+		
+	}
+	#nav-topo {
+		float: left;
+		height:100px;
+		margin:0 auto;
+		padding:0;
+		width: 70%;
+		position:relative;
+	}
+	#vazio{
+		clear: both;
+		float: left;
+		height: 35px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#menu-topo{ height:65px; width: 100%; clear: both; float:left; display:block;}
+	
+	/*NAVEGAÇÃO=====================================================================================*/
+	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px;}
+	/*=============================================================================================*/
+	
+
+
+	/*----------------------------------------------------------------------------------------------------------------------------------------*/	
+	
+	
+	
+	
+	#busca {
+		background:#ff3300;
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:auto;
+		margin:0 auto;
+		padding:0;
+		width: 100%;
+		display: block;
+		
+	}
+	#searchform{ height:auto; margin: 0px 20px; padding: 20px 0px; }
+	#slider {
+		clear: both;
+		float: left;
+		height: auto/*450px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		margin-bottom: 6px;
+		
+	}
+	#conteudo-slider {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#legenda {/*fazer faux column para esta div*/
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 40%;
+		display: block;
+	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 60%;
+		display: block;
+	}
+	#imagem img{padding:0; margin:0 auto;}
+	
+	#nav-slider {
+		border-bottom:#999 solid .5px;
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	#conteudo-principal {
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 69.9%;
+		display: block;
+	}
+	
+	#barra-lateral {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 30%;
+		display: block;
+	}
+	
+	#barra-lateral h1, h2, h3, h4, h5, p{ margin:20px 20px;}
+	
+	#rodape {
+		background:#1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		height: 190px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
+	}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;
+	}
+	#logo {
+		/*background: url(img/logo-topo.png) no-repeat top left;*/
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 30%;
+		 
+		
+	}
+	
+	#nav-topo {
+		float: left;
+		height:100px;
+		margin:0 auto;
+		padding:0;
+		width: 70%;
+		position:relative;
+	}
+	#vazio{
+		clear: both;
+		float: left;
+		height: 35px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#menu-topo{ height:65px; width: 100%; clear: both; float:left; display:block;}
+	
+	/*NAVEGAÇÃO=====================================================================================*/
+	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px; list-style: none;}
+	/*=============================================================================================*/
+	#navegacao-principal li { float: left; height: auto; width:172px; padding: 0px 0px; margin:0;}
+	#navegacao-principal li a { display:block; height:65px; width: 100%; text-decoration:none; background: #fff; margin: 0px;padding:0px;}
+	#navegacao-principal li strong{ display:block; padding-top: 10px; color:#ff3300}
+	#navegacao-principal li span{ display:block; font-size: 13px; color:#333}
+	
+	#navegacao-principal li *:hover{ background: #ccc; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px}
+	#navegacao-principal li.current-menu-item *{background: #ff3300; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px}
+	#navegacao-principal li.current-menu-item a strong{color: #CCC;}
+	#navegacao-principal li.current-menu-item a span{ color: #fff ;}
+	
+	
+	
+	#busca {
+		background:#ff3300;
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:auto;
+		margin:0 auto;
+		padding:0;
+		width: 100%;
+		display: block;
+		
+	}
+	#searchform{ height:auto; margin: 0px 20px; padding: 20px 0px; }
+	
+	#slider {
+		/*background:#eee;*/
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height: 450px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		margin-bottom: 6px;
+	}
+	#conteudo-slider {
+		float: left;
+		height:auto/*400px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#legenda {
+		float: left;
+		height:auto/*400px*/;
+		margin-left: 0;
+		width: 40%;
+		display: block;
+		margin-top: 7%;
+	}
+	
+	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 50px; }
+	#leg p{ color:#CCC; text-align:left; }
+	
+	#imagem {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 60%;
+		display: block;
+	}
+	#imagem img{ padding:0px; margin:0 auto; }
+	#nav-slider {
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		text-align:center;
+		z-index: 10;
+		
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
+	#conteudo-principal {
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 69.9%;
+		display: block;
+	}
+	
+	#barra-lateral {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 30%;
+		display: block;
+	}
+	
+	#barra-lateral h1, h2, h3, h4, h5, p{ margin:20px 20px;}
+	
+	#rodape {
+		background:#1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		height: 190px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
+	}
+	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
+	.floatRight{ float:right; padding-right: 250px;}
+	.imargem{ padding-left: 55px !important; padding-right: 10px;}
+}
