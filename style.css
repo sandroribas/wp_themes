@@ -62,15 +62,40 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	#nav-topo {
 		clear: both;
 		float: left;
-		height:50px;
+		height:auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
+		margin-bottom: 0px;
 	}
+	#vazio{ display:none;}
+	#menu-topo{ height:auto; width: 100%; clear: both; float:left; display:block; background: #eee;}
+	
+	/*NAVEGAÇÃO=====================================================================================*/
+	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px; list-style: none; }
+	/*=============================================================================================*/
+	#navegacao-principal li { height: auto; width:100%; margin:0; }
+	#navegacao-principal li a { display:block; height:auto; width: 100%; text-decoration:none; margin: 0px; padding: 5px 0px;}
+	#navegacao-principal li strong{ /*padding-top: 10px;  margin-left:20px;*/ color:#ff3300; font-size: 1.1em; letter-spacing:5px}
+	#navegacao-principal li span{ display:none; }
+	
+	/*#navegacao-principal li *:hover{ background: #ccc; color:#333 !important }*/
+	#navegacao-principal li.current-menu-item *{background: #ff3300; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 1px 1px 0px 0px}
+	#navegacao-principal li.current-menu-item a strong{color: #333;}
+	
 	#busca {                                                                         
-	display: none;
+	background:#ff3300;
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:auto;
+		margin-top: 25px;		
+		padding:0;
+		width: 100%;
+		display: block;
 																						  
 	}
+	#widgets-side{ display: none;}
 	#menu {                                                                            
 	clear: both;                                                                         
 	float: left;                                                                           
@@ -104,8 +129,8 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	display: block;                                                                          
 	}
 	
-	#leg{background:#F30; width: 100%; height:auto; margin:0 auto; padding-bottom:20px; text-align:center}
-	#leg h1{ color:#fff; text-align:left; margin-top: 20px;}
+	#leg{background:#F30; width: 100%; height:auto; margin:0 auto; padding-bottom:0px; text-align:center}
+	#leg h1{ color:#fff; text-align:left; margin-top: 0px;}
 	#leg p{ color:#CCC; text-align:left; }
 	
 	#imagem {   
@@ -180,174 +205,14 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 		margin: auto;
 	}
 	#logo {
-		/*background:#9F0;*/
-		float: left;
-		height:100px;
-		margin-left: 0;
-		width: 30%;
-		 
-		
-	}
-	#nav-topo {
-		float: left;
-		height:100px;
-		margin:0 auto;
-		padding:0;
-		width: 70%;
-		position:relative;
-	}
-	#vazio{
-		clear: both;
-		float: left;
-		height: 35px;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
-	#menu-topo{ height:65px; width: 100%; clear: both; float:left; display:block;}
-	
-	/*NAVEGAÇÃO=====================================================================================*/
-	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px;}
-	/*=============================================================================================*/
-	
-
-
-	/*----------------------------------------------------------------------------------------------------------------------------------------*/	
-	
-	
-	
-	
-	#busca {
-		background:#ff3300;
-		border-bottom: #CCC solid 1px;
-		clear: both;
-		float: left;
-		height:auto;
-		margin:0 auto;
-		padding:0;
-		width: 100%;
-		display: block;
-		
-	}
-	#searchform{ height:auto; margin: 0px 20px; padding: 20px 0px; }
-	#slider {
-		clear: both;
-		float: left;
-		height: auto/*450px*/;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-		margin-bottom: 6px;
-		
-	}
-	#conteudo-slider {
-		float: left;
-		height: auto/*400px*/;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
-	#legenda {/*fazer faux column para esta div*/
-		float: left;
-		height: auto/*400px*/;
-		margin-left: 0;
-		width: 40%;
-		display: block;
-	}
-	
-	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
-	#leg h1{ color:#fff; text-align:left; margin-top: 50px;}
-	#leg p{ color:#CCC; text-align:left; }
-	
-	#imagem {
-		float: left;
-		height: auto/*400px*/;
-		margin-left: 0;
-		width: 60%;
-		display: block;
-	}
-	#imagem img{padding:0; margin:0 auto;}
-	
-	#nav-slider {
-		border-bottom:#999 solid .5px;
-		clear: both;
-		float: left;
-		height:50px;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
-	#corpo {
-		clear: both;
-		float: left;
-		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
-		height:auto;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-	}
-	
-	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
-	
-	#conteudo-principal {
-		margin-bottom: 5px;
-		border-right: 1px solid #CCC;
-		float: left;
-		min-height:250px;
-		height:auto;
-		margin-left: 0;
-		width: 69.9%;
-		display: block;
-	}
-	
-	#barra-lateral {
-		margin-top: 2px;
-		margin-bottom: 5px;
-		float: left;
-		min-height:250px;
-		height:auto;
-		margin-left: 0;
-		width: 30%;
-		display: block;
-	}
-	
-	#barra-lateral h1, h2, h3, h4, h5, p{ margin:20px 20px;}
-	
-	#rodape {
-		background:#1D1D1D/*#ff3300*/;
-		clear: both;
-		float: left;
-		height: 190px;
-		margin-left: 0;
-		width: 100%;
-		display: block;
-		border-radius: 10px 10px 0px 0px; 
-		-moz-border-radius: 10px 10px 0px 0px; 
-		-webkit-border-radius: 10px 10px 0px 0px; 
-		border: 2px solid #1d1d1d;
-		margin-top:3px;
-	}
-}
-
-/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-
-@media only screen and (min-width: 769px) {
-	.gridContainer {
-		width: 88.2%;
-		max-width: 1232px;
-		padding-left: 0.9%;
-		padding-right: 0.9%;
-		margin: auto;
-	}
-	#logo {
 		/*background: url(img/logo-topo.png) no-repeat top left;*/
 		float: left;
 		height:100px;
 		margin-left: 0;
 		width: 30%;
-		 
-		
 	}
+	
+	#logo img{ padding-top: 20px}
 	
 	#nav-topo {
 		float: left;
@@ -370,8 +235,8 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	/*NAVEGAÇÃO=====================================================================================*/
 	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px; list-style: none;}
 	/*=============================================================================================*/
-	#navegacao-principal li { float: left; height: auto; width:172px; padding: 0px 0px; margin:0;}
-	#navegacao-principal li a { display:block; height:65px; width: 100%; text-decoration:none; background: #fff; margin: 0px;padding:0px;}
+	#navegacao-principal li { float: left; height: auto; width:20%; padding: 0px 0px; margin:0;}
+	#navegacao-principal li a { display:block; height:65px; width: 100%; text-decoration:none; margin: 0px;padding:0px;}
 	#navegacao-principal li strong{ display:block; padding-top: 10px; color:#ff3300}
 	#navegacao-principal li span{ display:block; font-size: 13px; color:#333}
 	
@@ -401,11 +266,10 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 		border-top: #CCC solid 1px;
 		clear: both;
 		float: left;
-		height: 450px;
+		height: auto;
 		margin-left: 0;
 		width: 100%;
 		display: block;
-		margin-bottom: 6px;
 	}
 	#conteudo-slider {
 		float: left;
@@ -420,12 +284,187 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 		margin-left: 0;
 		width: 40%;
 		display: block;
-		margin-top: 7%;
 	}
 	
-	#leg{background:#F30; width: 80%; height:auto; margin:0 auto; padding-bottom:50px; text-align:center}
-	#leg h1{ color:#fff; text-align:left; margin-top: 50px; }
-	#leg p{ color:#CCC; text-align:left; }
+	#leg{b width: 100%; height:auto; margin:0 auto; text-align:center}
+	#leg h1{ color:#ff3300; text-align:left; margin-top: 0px; }
+	#leg p{ color: #999; text-align:left; }
+	
+	#imagem {
+		float: left;
+		height: auto/*400px*/;
+		margin-left: 0;
+		width: 60%;
+		display: block;
+	}
+	#imagem img{ padding:0px; margin:0 auto; }
+	#nav-slider {
+		border-bottom: #CCC solid 1px;
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:50px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		text-align:center;
+		z-index: 10;
+		
+	}
+	#corpo {
+		clear: both;
+		float: left;
+		min-height:400px;/*definir min-height e após os testes alterar o height para auto*/
+		height:auto;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	.home-cols{ width:25%; min-height:400px; height:auto; display:block; float:left; text-align:center;}
+	
+	.h1-homecol{margin: 40px 5px 30px 5px; color: #ff3300;}
+	.img-homecol{margin: 0px 0px;}
+	.txt-homecol{ margin: 30px 20px 0px 20px; text-align:left;}
+	
+	#conteudo-principal {
+		margin-bottom: 5px;
+		border-right: 1px solid #CCC;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 69.7%;
+		display: block;
+	}
+	
+	#barra-lateral {
+		margin-top: 0px;
+		margin-bottom: 5px;
+		float: left;
+		min-height:250px;
+		height:auto;
+		margin-left: 0;
+		width: 30%;
+		display: block;
+	}
+	
+	#barra-lateral h1, h2, h3, h4, h5, p{ margin:0px 0px;}
+	
+	#rodape {
+		background:#1D1D1D/*#ff3300*/;
+		clear: both;
+		float: left;
+		height: 190px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		border-radius: 10px 10px 0px 0px; 
+		-moz-border-radius: 10px 10px 0px 0px; 
+		-webkit-border-radius: 10px 10px 0px 0px; 
+		border: 2px solid #1d1d1d;
+		margin-top:3px;
+	}
+	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
+	.floatRight{ float:right; padding-right: 250px;}
+	.imargem{ padding-left: 55px !important; padding-right: 10px;}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 88.2%;
+		max-width: 1232px;
+		padding-left: 0.9%;
+		padding-right: 0.9%;
+		margin: auto;
+	}
+	#logo {
+		/*background: url(img/logo-topo.png) no-repeat top left;*/
+		float: left;
+		height:100px;
+		margin-left: 0;
+		width: 30%;
+	}
+	
+	#logo img{ padding-top: 0px}
+	
+	#nav-topo {
+		float: left;
+		height:100px;
+		margin:0 auto;
+		padding:0;
+		width: 70%;
+		position:relative;
+	}
+	#vazio{
+		clear: both;
+		float: left;
+		height: 35px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#menu-topo{ height:65px; width: 100%; clear: both; float:left; display:block;}
+	
+	/*NAVEGAÇÃO=====================================================================================*/
+	#navegacao-principal{ width:100%; height: auto; text-align:center; margin:0 auto; padding:0px; list-style: none;}
+	/*=============================================================================================*/
+	#navegacao-principal li { float: left; height: auto; width:20%; padding: 0px 0px; margin:0;}
+	#navegacao-principal li a { display:block; height:65px; width: 100%; text-decoration:none;  margin: 0px;padding:0px;}
+	#navegacao-principal li strong{ display:block; padding-top: 15px; color:#ff3300}
+	#navegacao-principal li span{ display:block; font-size: 13px; color:#333}
+	
+	#navegacao-principal li *:hover{ background: #ccc; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px}
+	#navegacao-principal li.current-menu-item *{background: #ff3300; border-radius: 5px 5px 0px 0px;-moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px}
+	#navegacao-principal li.current-menu-item a strong{color: #333;}
+	#navegacao-principal li.current-menu-item a span{ color: #fff ;}
+	
+	
+	
+	#busca {
+		background:#ff3300;
+		border-bottom: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height:auto;
+		margin:0 auto;
+		padding:0;
+		width: 100%;
+		display: block;
+		
+	}
+	#searchform{ height:auto; margin: 0px 20px; padding: 20px 0px; }
+	
+	#slider {
+		/*background:#eee;*/
+		border-top: #CCC solid 1px;
+		clear: both;
+		float: left;
+		height: 450px;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+		margin-bottom: 1px;
+	}
+	#conteudo-slider {
+		float: left;
+		height:auto/*400px*/;
+		margin-left: 0;
+		width: 100%;
+		display: block;
+	}
+	#legenda {
+		float: left;
+		height:400px/*400px*/;
+		margin-left: 0;
+		width: 40%;
+		display: block;
+	}
+	
+	#leg{ /*background:#eee; */width: 100%; height:400px; margin:0 auto; padding-bottom:0px; text-align:center}
+	#leg h1{ color:#ff3300; text-align:left; margin: 50px 0px 0px 20px; font-size: 2.5em; }
+	#leg p{ color: #666; text-align:left; font-size: 1.3em; }
 	
 	#imagem {
 		float: left;
@@ -504,4 +543,5 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	.floatLeft{ float:left; margin:5px 10px 5px 0px;}
 	.floatRight{ float:right; padding-right: 250px;}
 	.imargem{ padding-left: 55px !important; padding-right: 10px;}
+	
 }
