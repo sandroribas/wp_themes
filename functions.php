@@ -277,33 +277,15 @@ add_action('manage_posts_custom_column', 'ST4_columns_content', 10, 2);
 		'before_title'=>'<h1 class="pau">',
 		'after_title'=>'</h1>',));
 		
-		register_sidebar(array('name'=>'Lateral Home A',
+		register_sidebar(array('name'=>'Lateral A',
 		'name' => __( 'Lateral Home A' ),
 		'id'=>'lateral-home-a',
-		'description' => __( 'Inclua Widgets na Lateral Home A.' ),
+		'description' => __( 'Inclua Widgets na Lateral A.' ),
 		'before_widget'=>'<div>',
 		'after_widget'=>'</div>',
 		'before_title'=>'<h1 class="especial2">',
 		'after_title'=>'</h1>',));
 		
-		//as sidebars auxiliares ainda estão sem uso
-		register_sidebar(array('name'=>'Sidebar Auxiliar Esquerda',
-		'name' => __( 'Sidebar Auxiliar Esquerda' ),
-		'id'=>'auxiliar-esquerda',
-		'description' => __( 'Inclua Widgets na Sidebar Auxiliar Esquerda.' ),
-		'before_widget'=>'<div>',
-		'after_widget'=>'</div>',
-		'before_title'=>'<h1">',
-		'after_title'=>'</h1>',));
-		
-		register_sidebar(array('name'=>'Sidebar Auxiliar Direita',
-		'name' => __( 'Sidebar Auxiliar Direita' ),
-		'id'=>'auxiliar-direita',
-		'description' => __( 'Inclua Widgets na Sidebar Auxiliar Direita.' ),
-		'before_widget'=>'<div>',
-		'after_widget'=>'</div>',
-		'before_title'=>'<h1">',
-		'after_title'=>'</h1>',));
 		
 		//RODAPÉ
 		register_sidebar(array('name'=>'Rodapé A',
@@ -404,4 +386,12 @@ function the_post_thumbnail_caption() {
 
 //TWITTER
 
+//Removendo atributos de tamanho das imagens
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
 ?>

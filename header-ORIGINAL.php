@@ -14,7 +14,7 @@
 <title>
 <?php if (is_home () ) { bloginfo('name'); } elseif (is_category() || is_tag()) { single_cat_title(); echo ' &bull; ' ; bloginfo('name'); } elseif (is_single() || is_page()) { single_post_title(); } else { wp_title('',true); } ?>
 </title>
-
+<?php wp_enqueue_script("jquery"); ?>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" type="image/x-icon" />
 <link href="<?php bloginfo('template_url'); ?>/css/boilerplate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
@@ -33,10 +33,9 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/slides.min.jquery.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/js/geral.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/respond.min.js" type="text/javascript"></script>
+ <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/geral.js"></script>
 </head>
 <body>
 <div class="gridContainer clearfix">
@@ -66,10 +65,15 @@ Do the following if you're using your customized build of modernizr (http://www.
             ?>
 		</div><!--menu-topo-->
     </div><!--Fim do NAV-topo-->
-	
-    <!-- SLIDER-->
-    <div id="slides">
-    	<div class="slides_container">
-			<?php get_template_part('loop', 'slider');?> 
+	<div id="slider">
+   	  <div id="conteudo-slider">
+      	<div id="legenda">
+        	<div id="leg">
+        		<h1>This is the content for Layout Div Tag "legenda".</h1>
+            	<p>This is the content for Layout Div Tag "legenda". This is the content for Layout Div Tag "legenda".</p> 
+            </div>       
         </div>
-	</div>
+        <div id="imagem"><img class="imargem" src="<?php bloginfo('template_directory');?>/img/monitor.png" alt="monitor" /></div>
+      </div>
+      <div id="nav-slider">This is the content for Layout Div Tag "nav-slider"</div>
+    </div><!--fim do SLIDER-->
