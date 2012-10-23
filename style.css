@@ -548,9 +548,17 @@ body{width:100%; height:auto; background-image:url(img/bg3.png); background-posi
 	font-size:1.3em;
 	line-height:1.33;
 	color:#ff3300;
+	
 	/*border-top:1px solid #000;*/
-	text-shadow:0px 5px 9px #000000;
+	
 }
+
+
+.caption a{ text-decoration:none; outline:none; border: none; text-shadow:2px 2px 6px  #666666; display:block}
+.caption a h1{ color: #ff3300; margin:0px 0px 15px 0px; font-size:2.2em;}
+.caption a p{ color: #666; margin: 0px; font-size:1.22em;}
+
+.caption a *:hover{color:#999 !important;}
 
 
 /*---SLIDER FIM!!!!---------------------------------------------------------------------------------------------------------------------------------------------*/
